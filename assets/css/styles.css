@@ -1,0 +1,201 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #EEEEEE;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.box-shadow {
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 0 0 4px 0;
+  margin: 0 0 15px 0;
+}
+
+.btn-primary {
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 24px;
+  text-align: center;
+  vertical-align: middle;
+  background: #0a66c2;
+  border-radius: 28px;
+  margin-left: 70px;
+}
+
+.form {
+  padding: 20px;
+  width: 500px;
+  max-height: 80%;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+.form-group label {
+  min-width: 70px;
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+}
+
+.form-control {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.075rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  height: 40px;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.slideshow_wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.slideshow {
+  width: 200%;
+  margin: 0 0 0 -200%;
+  position: relative;
+  animation: slide 5s infinite linear running;
+}
+
+.slide {
+  width: 50%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 200%;
+  }
+}
